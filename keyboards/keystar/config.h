@@ -23,8 +23,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define VENDOR_ID 0x0717
 #define PRODUCT_ID 0x0001
 #define DEVICE_VER 0x0001
-#define MANUFACTURER Neil Brian Ramirez
-#define PRODUCT [n]87
+#define MANUFACTURER KEYSTAR
+#define PRODUCT ORION87
 
 /* key matrix size */
 #define MATRIX_ROWS 6
@@ -40,8 +40,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *                  ROW2COL = ROW = Anode (+), COL = Cathode (-, marked on diode)
  *
  */
-#define MATRIX_ROW_PINS { F1, F2, B0, D5, B7, B3}
-#define MATRIX_COL_PINS { D1, D2, D3, B1, B6, C6, C7, F7, F6, F5, D6, D7, B4, B5, F1}
+#define MATRIX_ROW_PINS { F1, F0, B0, D5, B7, B3}
+#define MATRIX_COL_PINS { D1, D2, D3, B2, B6, C6, C7, F7, F6, F5, D6, D7, B4, B5, F4}
 #define UNUSED_PINS
 
 /* COL2ROW, ROW2COL*/
@@ -58,7 +58,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define RGB_DI_PIN D0
 #ifdef RGB_DI_PIN
-#define RGBLED_NUM 16
+
+#define DRIVER_LED_TOTAL 97
+
+#define RGBLED_NUM 97
 #define RGBLIGHT_HUE_STEP 8
 #define RGBLIGHT_SAT_STEP 8
 #define RGBLIGHT_VAL_STEP 8
